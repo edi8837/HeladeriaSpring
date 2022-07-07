@@ -23,6 +23,10 @@ public class UsuarioServicio {
         return usuarioRepositorio.findUsuarioNombreById(id);
     }
 
+    public Cliente retrieveUsuarioById(Long id) {
+        return (Cliente) usuarioRepositorio.findUsuarioById(id);
+    }
+
     public List<String> retrieveAllNombres(){
         return (List<String>) usuarioRepositorio.findAllNombre();
     }

@@ -11,6 +11,9 @@ public interface UsuarioRepositorio extends CrudRepository<Cliente, Long> {
     @Query("select u.id, u.nombre from Cliente u where u.id = :id")
     String findUsuarioNombreById(Long id);
 
+    @Query("select u from Cliente u where u.id = :id")
+    Cliente findUsuarioById(Long id);
+
     @Query("select u.nombre from Cliente u")
     List<String> findAllNombre();
 

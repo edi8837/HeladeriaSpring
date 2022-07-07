@@ -43,6 +43,10 @@ public class PedidoServicio {
         return pedidoRepositorio.IdClienteEstado(idCliente, estado);
     }
 
+    public List<Pedido> retrieveIdCliente(long idC){
+        return pedidoRepositorio.IdCliente(idC);
+    }
+
 
 
 

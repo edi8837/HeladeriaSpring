@@ -96,6 +96,7 @@ public class UsuarioControlador {
 
         return ResponseEntity.ok("Usuario Eliminada Correctamente");
     }
+
     @GetMapping("/logout")
     public ResponseEntity <String> cerrarS(HttpSession httpSession){
         httpSession.setAttribute("idCliente",null);
