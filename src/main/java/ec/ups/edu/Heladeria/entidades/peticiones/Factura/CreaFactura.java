@@ -16,7 +16,9 @@ public class CreaFactura {
     @JsonProperty
     private double iva;
     @JsonProperty
-    private long numpedido;
+        private long numpedido;
+    @JsonProperty
+    private long numtargeta;
 
     public double getTotal() {
         return total;
@@ -50,11 +52,19 @@ public class CreaFactura {
         this.iva = iva;
     }
 
-    public long getPedido() {
+    public long getNumpedido() {
         return numpedido;
     }
 
-    public void setPedido(long pedido) {
-        this.numpedido = pedido;
+    public void setNumpedido(long numpedido) {
+        this.numpedido = numpedido;
+    }
+
+    public long getNumtargeta() {
+        return numtargeta;
+    }
+
+    public void setNumtargeta(long numtargeta) {
+        this.numtargeta = numtargeta;
     }
 }
