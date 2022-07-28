@@ -2,7 +2,7 @@ package ec.ups.edu.Heladeria.entidades;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 @Entity

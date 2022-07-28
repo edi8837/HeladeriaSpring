@@ -6,7 +6,7 @@ import ec.ups.edu.Heladeria.entidades.peticiones.usuario.CrearUsuario;
 import ec.ups.edu.Heladeria.entidades.peticiones.usuario.IniciarSesion;
 import ec.ups.edu.Heladeria.servicios.UsuarioNoEncontradoException;
 import ec.ups.edu.Heladeria.servicios.UsuarioServicio;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

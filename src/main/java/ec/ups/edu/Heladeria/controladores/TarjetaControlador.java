@@ -8,10 +8,10 @@ import ec.ups.edu.Heladeria.servicios.SesionC;
 import ec.ups.edu.Heladeria.servicios.UsuarioServicio;
 import ec.ups.edu.Heladeria.servicios.TarjetaNoEncontradaException;
 import ec.ups.edu.Heladeria.servicios.TarjetaServicio;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -6,7 +6,7 @@ import ec.ups.edu.Heladeria.entidades.Pedido;
 import ec.ups.edu.Heladeria.entidades.Tarjeta;
 import ec.ups.edu.Heladeria.servicios.FacturaServicio;
 import ec.ups.edu.Heladeria.servicios.UsuarioServicio;
-import jakarta.servlet.http.HttpSession;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
