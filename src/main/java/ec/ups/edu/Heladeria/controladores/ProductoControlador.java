@@ -40,7 +40,10 @@ public class ProductoControlador {
         List<Producto> listaProductos = productoServicios.findAll();
         return new ResponseEntity<List<Producto>>(listaProductos, HttpStatus.OK);
     }
-
+    @GetMapping("/hola") //obtener el listado de Pedidos
+    public ResponseEntity<String> hola() {
+        return new ResponseEntity<String>("hola mundo", HttpStatus.OK);
+    }
     @GetMapping("/productos/sucursal/{nombreS}")
     public ResponseEntity<List<Producto>> getProductosSucursal(@PathVariable String nombreS){
         Optional<Sucursal> sucursalOptional = Optional.ofNullable(sucursalServicio.retrieveSucursalName(nombreS));
